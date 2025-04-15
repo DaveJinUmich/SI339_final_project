@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Media Recommendations</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+</head>
+<body>
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>About This Project</h1>
+        
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Purpose</h2>
+                <p>This website was created as a final project for my web design class. I wanted to create a platform where I could share my favorite movies and TV shows that I've watched recently, along with my personal ratings.</p>
+                
+                <h2>Features</h2>
+                <ul>
+                    <li>Browse movies and TV shows by category</li>
+                    <li>View detailed information about each media item</li>
+                    <li>Like/Dislike my recommendations</li>
+                    <li>Links to Wikipedia for further reading</li>
+                </ul>
+                
+                <h2>Technical Implementation</h2>
+                <p>This website utilizes HTML5, CSS3, and JavaScript to create an interactive and accessible experience. I implemented flexbox for responsive layouts and designed for a filtering functionality.</p>
+                
+                <p>Feel free to use the rating system to express your own agreement or disagreement with my ratings.</p>
+                
+                <h2>Future Improvements</h2>
+                <p>In the future, I plan to add more features such as:</p>
+                <ul>
+                    <li>User accounts to save favorite movies and shows</li>
+                    <li>Comment section for discussions</li>
+                    <li>More detailed rating system with multiple criteria</li>
+                    <li>Search functionality</li>
+                </ul>
+            </div>
+            
+            <div class="creator-info">
+                <h2>About Me</h2>
+                <img src="images/TREE.png" alt="Profile picture of website creator" class="profile-img">
+                <p>I'm a UX design student with a passion for movies and TV shows. This website combines my love for web development and media into one project. I hope you enjoy browsing my recommendations!</p>
+                <p>Feel free to reach out with any suggestions or feedback about the website.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>David Jin © 2025</p>
+        <div class="audio-player">
+            <audio id="theme-player" controls>
+                <source src="assets/hello.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="now-playing">Now playing: hello! by ROLE MODEL</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

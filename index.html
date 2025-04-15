@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Recommendations</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+</head>
+<body>
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>My Media Recommendations</h1>
+        
+        <section class="intro">
+            <p>Welcome to my media recommendations website! Here you'll find my personal ratings and reviews of movies and TV shows I've watched recently. Feel free to explore my recommendations and share your opinions.</p>
+            
+            <div class="media-categories">
+                <div class="category-card">
+                    <h2>Movies</h2>
+                    <img src="images/movieprojector.png" alt="Movie icon showing a film reel">
+                    <p>Check out my latest movie recommendations, ratings, and reviews.</p>
+                    <a href="movies.html" class="button">View Movies</a>
+                </div>
+                
+                <div class="category-card">
+                    <h2>TV Shows</h2>
+                    <img src="images/tvshow.png" alt="TV icon showing a television set">
+                    <p>Discover TV series that I've been watching and what I think about them.</p>
+                    <a href="tvshows.html" class="button">View TV Shows</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured">
+            <h2>Featured Recommendation</h2>
+            <div class="featured-item">
+                <img src="images/inception.jpg" alt="Poster for Inception movie showing a city folding on itself">
+                <div class="featured-content">
+                    <h3>Inception</h3>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-number">5/5</span>
+                    </div>
+                    <p>A mind-bending thriller that explores the concept of dreams within dreams. Christopher Nolan's masterpiece features stunning visual effects and a complex narrative that will keep you thinking long after the credits roll.</p>
+                    <div class="featured-actions">
+                        <a href="movies.html#inception" class="button">Read Full Review</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>David Jin © 2025</p>
+        <div class="audio-player">
+            <audio id="theme-player" controls>
+                <source src="assets/stayawhile.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="now-playing">Now playing: Stay A While by niko rain</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

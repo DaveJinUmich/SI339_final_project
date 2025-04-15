@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows - My Media Recommendations</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+</head>
+<body>
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a class="active" href="tvshows.html">TV Shows</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>TV Show Recommendations</h1>
+        
+        <div class="filter-options">
+            <button type="button" class="filter-button active" data-filter="all">All Shows</button>
+            <button type="button" class="filter-button" data-filter=".drama">Drama</button>
+            <button type="button" class="filter-button" data-filter=".comedy">Comedy</button>
+            <button type="button" class="filter-button" data-filter=".scifi">Sci-Fi</button>
+            <button type="button" class="filter-button" data-filter=".fantasy">Fantasy</button>
+        </div>
+
+        <div class="media-container" id="tvshows-container">
+            <div class="media-item mix drama scifi fantasy" id="arcane">
+                <div class="media-card">
+                    <img src="images/arcane.jpg" alt="Poster for Arcane TV show">
+                    <h2>Arcane</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">95</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">4</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Set in the world of League of Legends, Arcane depicts the origin stories of several characters from the utopian city of Piltover and its oppressed underground counterpart, Zaun. The series follows sisters Vi and Jinx as they find themselves on opposing sides of a brewing conflict between the two cities. With stunning animation and emotional storytelling, Arcane explores themes of class division, corruption, and family bonds.</p>
+                        <a href="https://en.wikipedia.org/wiki/Arcane_(TV_series)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix fantasy drama" id="got">
+                <div class="media-card">
+                    <img src="images/got.jpg" alt="Poster for Game of Thrones TV show">
+                    <h2>Game of Thrones</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">My Rating: 4/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">83</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">21</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Based on George R.R. Martin's book series "A Song of Ice and Fire," this epic fantasy drama follows multiple storylines across the fictional continents of Westeros and Essos. Noble families engage in a deadly game of political intrigue while battling for the Iron Throne, as an ancient threat emerges from beyond the realm's northern border. Known for its complex characters, unexpected plot twists, and ambitious production values.</p>
+                        <a href="https://en.wikipedia.org/wiki/Game_of_Thrones" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix drama comedy scifi fantasy" id="invincible">
+                <div class="media-card">
+                    <img src="images/invincible.jpg" alt="Poster for Invincible TV show">
+                    <h2>Invincible</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">91</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">7</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Based on the comic book series by Robert Kirkman, Invincible follows Mark Grayson, a normal teenager whose father is the most powerful superhero on the planet. As Mark develops powers of his own, he discovers his father's legacy may not be as heroic as it seems. This adult animated series blends superhero action with emotional drama, dark comedy, and shocking plot twists.</p>
+                        <a href="https://en.wikipedia.org/wiki/Invincible_(TV_series)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix drama scifi" id="severance">
+                <div class="media-card">
+                    <img src="images/severance.jpg" alt="Poster for Severance TV show">
+                    <h2>Severance</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">72</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">8</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>An unsettling psychological thriller where employees of Lumon Industries undergo a surgical procedure called "severance" that separates their work memories from their personal lives. Adam Scott stars as Mark Scout, who begins to uncover a web of conspiracy within the mysterious corporation.</p>
+                        <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix fantasy" id="solo_leveling">
+                <div class="media-card">
+                    <img src="images/sololeveling.jpg" alt="Poster for Solo Leveling anime">
+                    <h2>Solo Leveling</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">My Rating: 4/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">68</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">12</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>In a world where hunters must battle deadly monsters to protect humanity, Sung Jinwoo starts as the world's weakest hunter. After nearly dying in a dungeon, he receives a mysterious program called the "System" that allows him to level up without limit, unlike others. This adaptation of the popular Korean web novel follows Jinwoo's journey from being known as "the world's weakest" to becoming an unparalleled force.</p>
+                        <a href="https://en.wikipedia.org/wiki/Solo_Leveling" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix comedy" id="young_sheldon">
+                <div class="media-card">
+                    <img src="images/youngsheldon.jpg" alt="Poster for Young Sheldon TV show">
+                    <h2>Young Sheldon</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">My Rating: 4/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">59</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">14</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>This spin-off prequel to The Big Bang Theory follows the early life of child genius Sheldon Cooper as he navigates high school in East Texas. The show provides a heartwarming look at the family dynamics and challenges faced by a gifted child trying to fit into a world he struggles to understand, with narration by Jim Parsons as the adult Sheldon reflecting on his childhood.</p>
+                        <a href="https://en.wikipedia.org/wiki/Young_Sheldon" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>David Jin © 2025</p>
+        <div class="audio-player">
+            <audio id="theme-player" controls>
+                <source src="assets/enjoytheshow.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="now-playing">Now playing: Enjoy the Show by The Weeknd</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

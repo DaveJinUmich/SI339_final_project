@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #004080;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Skip to Content Link - Accessibility */
+.skip-to-content-link {
+    background: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(0);
+}
+
+/* Navigation */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover, .nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e74c3c;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+/* Category Cards on Homepage */
+.media-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover, .category-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.category-card h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.category-card p {
+    margin-bottom: 20px;
+}
+
+/* Featured Section */
+.featured {
+    margin: 50px 0;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.featured-item img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.featured-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.featured-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.featured-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Media Items (Movies/TV Shows) */
+.filter-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.filter-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-button:hover, .filter-button:focus {
+    background-color: #ddd;
+}
+
+.filter-button.active {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.media-item {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.media-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.media-card h2 {
+    padding: 15px 15px 5px;
+    font-size: 1.25rem;
+}
+
+.rating {
+    padding: 0 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars {
+    color: #6f5200;
+    font-size: 1.2rem;
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px 10px;
+}
+
+.rating-buttons button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rating-buttons button:hover, .rating-buttons button:focus {
+    background-color: #f1f1f1;
+}
+
+.media-details {
+    padding: 10px 15px 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-details p {
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.wiki-link {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* About Page */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.creator-info {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button, button.play-theme {
+    background-color: #b83121;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button:hover, .button:focus, 
+button.play-theme:hover, button.play-theme:focus {
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.audio-player {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#theme-player {
+    width: 300px;
+    max-width: 100%;
+}
+
+#now-playing {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Improved skip button styling */
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skip-button {
+    background-color: #b83121;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skip-button:hover, .skip-button:focus {
+    background-color: #8c261b;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skip-button:active {
+    transform: translateY(0);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .featured-item {
+        flex-direction: column;
+    }
+    
+    .featured-item img {
+        max-width: 100%;
+    }
+    
+    .media-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-button {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+    }
+    
+    .nav li {
+        margin: 5px 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Accessibility Features */
+:focus {
+    outline: 3px solid #e74c3c;
+    outline-offset: 3px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    .button, button.play-theme {
+        border: 2px solid currentColor;
+    }
+    
+    .nav a.active::after {
+        background-color: currentColor;
+    }
+}
+
+.toggle-button-container {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Styling for the toggle details button */
+.toggle-details-button {
+    display: block;
+    margin: 10px auto;
+    background-color: #1f2c38; /* Darker for better contrast */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: auto;
+    text-align: center;
+}
+
+.toggle-details-button:hover, 
+.toggle-details-button:focus {
+    background-color: #0f1922;
+    transform: translateY(-2px);
+    outline: 3px solid #e74c3c;
+}
+
+/* Style for the voted state of rating buttons */
+.rating-buttons button.voted {
+    background-color: #f1f1f1;
+    border-color: #2c3e50;
+}
+
+/* Hide feedback messages */
+.feedback-message {
+    display: none !important;
+}
+
+/* Remove any traces of the previous buttons/indicators */
+.more-button, .compress-button, .more-indicator {
+    display: none;
+}
+
+.audio-player {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#theme-player {
+    width: 300px;
+    max-width: 100%;
+}
+
+#now-playing {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #ffffff;
+}

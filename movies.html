@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - My Media Recommendations</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+</head>
+<body>
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Movie Recommendations</h1>
+        
+        <div class="filter-options">
+            <button type="button" class="filter-button active" data-filter="all">All Movies</button>
+            <button type="button" class="filter-button" data-filter=".action">Action</button>
+            <button type="button" class="filter-button" data-filter=".drama">Drama</button>
+            <button type="button" class="filter-button" data-filter=".scifi">Sci-Fi</button>
+            <button type="button" class="filter-button" data-filter=".comedy">Comedy</button>
+        </div>
+
+        <div class="media-container" id="movies-container">
+            <div class="media-item mix drama" id="deadpoetssociety">
+                <div class="media-card">
+                    <img src="images/deadpoetssociety.jpg" alt="Poster for Dead Poets Society">
+                    <h2>Dead Poets Society</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 6/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">58</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">5</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Set in 1959 at the prestigious Welton Academy, an English teacher John Keating (Robin Williams) inspires his students through his teaching of poetry and unorthodox methods. The film follows a group of boys who revive the Dead Poets Society, a secret club dedicated to celebrating life, literature, and free thinking. As the students begin to break free from tradition and expectation, they face challenges from the school's rigid administration and their own families. This powerful coming-of-age drama explores themes of individuality, conformity, and the transformative power of education.</p>
+                        <a href="https://en.wikipedia.org/wiki/Dead_Poets_Society" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix scifi action" id="dune">
+                <div class="media-card">
+                    <img src="images/dune.jpg" alt="Poster for Dune movie">
+                    <h2>Dune</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">61</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">7</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Denis Villeneuve's adaptation of Frank Herbert's science fiction epic follows Paul Atreides, whose family accepts the stewardship of the dangerous desert planet Arrakis. As the only source of the most valuable substance in the universe, control of Arrakis is highly contested among the noble houses. The film features stunning visuals and an all-star cast including Timothée Chalamet, Oscar Isaac, and Zendaya.</p>
+                        <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix action comedy" id="fallguy">
+                <div class="media-card">
+                    <img src="images/fallguy.jpg" alt="Poster for Fall Guy movie">
+                    <h2>Fall Guy</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">My Rating: 4/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">43</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">11</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Ryan Gosling stars as Colt Seavers, a battle-scarred stuntman who left the business after a near-death experience on set. When the star of a mega-budget film goes missing, Colt is called back to perform the stunts and try to find the missing actor. The film balances action-packed stunt sequences with humor and heart.</p>
+                        <a href="https://en.wikipedia.org/wiki/The_Fall_Guy_(film)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix action" id="gladiator2">
+                <div class="media-card">
+                    <img src="images/gladiator2.jpg" alt="Poster for Gladiator 2 movie">
+                    <h2>Gladiator 2</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">My Rating: 4/5</span>
+                    </div>
+                     <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">37</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">12</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Set years after the events of the first film, Gladiator 2 follows Lucius, the son of Lucilla, as he's forced to enter the Colosseum and follow in the footsteps of his stepfather Maximus. Paul Mescal delivers a powerful performance in this epic sequel directed by Ridley Scott.</p>
+                        <a href="https://en.wikipedia.org/wiki/Gladiator_II" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix scifi action" id="inception">
+                <div class="media-card">
+                    <img src="images/inception.jpg" alt="Poster for Inception">
+                    <h2>Inception</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">43</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">11</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Dom Cobb (Leonardo DiCaprio) is a skilled thief who specializes in extracting secrets from people's subconscious while they dream. Offered a chance at redemption if he can perform the impossible task of inception—planting an idea into someone's mind—Cobb assembles a team of specialists for a dangerous mission where dreams are nested within dreams. Christopher Nolan's masterpiece combines breathtaking visuals, intricate storytelling, and philosophical questions about reality, memory, and regret that will keep you thinking long after the credits roll.</p>
+                        <a href="https://en.wikipedia.org/wiki/Inception" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-item mix comedy" id="superbad">
+                <div class="media-card">
+                    <img src="images/superbad.jpg" alt="Poster for Superbad movie">
+                    <h2>Superbad</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">My Rating: 5/5</span>
+                    </div>
+                    <div class="rating-buttons">
+                        <button class="agree" aria-label="Agree with rating">👍 <span class="count">52</span></button>
+                        <button class="disagree" aria-label="Disagree with rating">👎 <span class="count">8</span></button>
+                    </div>
+                    <div class="media-details">
+                        <p>Two high school best friends, Seth and Evan, embark on an epic journey to secure alcohol for a party in hopes of losing their virginity before college. Featuring breakout performances from Jonah Hill and Michael Cera, this coming-of-age comedy has become a modern classic with its realistic portrayal of teenage friendship.</p>
+                        <a href="https://en.wikipedia.org/wiki/Superbad_(film)" class="wiki-link" target="_blank" rel="noopener">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>David Jin © 2025</p>
+        <div class="audio-player">
+            <audio id="theme-player" controls>
+                <source src="assets/junnymovie.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="now-playing">Now playing: Junny Movie</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
